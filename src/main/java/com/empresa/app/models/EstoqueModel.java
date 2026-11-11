@@ -20,7 +20,7 @@ import java.time.LocalDate;
 @NamedQueries({
     @NamedQuery(
         name = "EstoqueModel.findByFilialCnpjNamedQuery",
-        query = "select e from EstoqueModel e where e.filialModel.cnpj = :cnpjFilial"
+        query = "select e from EstoqueModel e where e.filialModel.cnpj = :parametroCnpjFilial"
     )
 })
 

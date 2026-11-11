@@ -14,7 +14,7 @@ public interface EstoqueRepository extends JpaRepository<EstoqueModel, EstoqueMo
 
     //Named Query definida na entidade EstoqueModel.
     @Query(name = "EstoqueModel.findByFilialCnpjNamedQuery") 
-    List<EstoqueModel> findByFilialCnpjNamedQuery(@Param("cnpjFilial") String cnpjFilial);
+    List<EstoqueModel> findByFilialCnpjNamedQuery(@Param("parametroCnpjFilial") String cnpjFilial);
 
     // JPQL (Java Persistence Query Language) consulta utilizando entidades e seus atributos
     @Query("""
